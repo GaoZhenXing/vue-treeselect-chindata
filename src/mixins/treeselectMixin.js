@@ -1,5 +1,3 @@
-import fuzzysearch from 'fuzzysearch'
-
 import {
   warning,
   onLeftClick, scrollIntoView,
@@ -49,9 +47,10 @@ function stringifyOptionPropValue(value) {
 }
 
 function match(enableFuzzyMatch, needle, haystack) {
-  return enableFuzzyMatch
-    ? fuzzysearch(needle, haystack)
-    : includes(haystack, needle)
+  // return enableFuzzyMatch
+  //   ? fuzzysearch(needle, haystack)
+  //   : includes(haystack, needle)
+  return includes(haystack, needle)
 }
 
 function getErrorMessage(err) {
