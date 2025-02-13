@@ -2,7 +2,7 @@
   "name": "@gao.zhenxing/vue-treeselect-chindata",
   "version": "0.4.1",
   "description": "A multi-select component with nested options support for Vue.js",
-  "author": "Riophae Lee <riophaelee@gmail.com>",
+  "author": "GaoZhenXing <zx.gao@foxmail.com>",
   "license": "MIT",
   "homepage": "https://vue-treeselect.js.org/",
   "repository": {
