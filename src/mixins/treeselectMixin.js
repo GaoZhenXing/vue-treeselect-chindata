@@ -14,6 +14,7 @@ import {
   ALL_CHILDREN, ALL_DESCENDANTS, LEAF_CHILDREN, LEAF_DESCENDANTS,
   ORDER_SELECTED, LEVEL, INDEX,
 } from '../constants'
+import {pinyinIncludes} from "../utils/pinyinIncludes";
 
 function sortValueByIndex(a, b) {
   let i = 0
@@ -47,10 +48,12 @@ function stringifyOptionPropValue(value) {
 }
 
 function match(enableFuzzyMatch, needle, haystack) {
+
   // return enableFuzzyMatch
   //   ? fuzzysearch(needle, haystack)
   //   : includes(haystack, needle)
-  return includes(haystack, needle)
+  // return includes(haystack, needle)
+  return pinyinIncludes(haystack, needle)
 }
 
 function getErrorMessage(err) {
